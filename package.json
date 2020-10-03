@@ -1,0 +1,22 @@
+{
+  "name": "cuarto-rey",
+  "version": "1.0.0",
+  "description": "Juego Cuarto Rey",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lobosgonza/Cuarto-Rey.git"
+  },
+  "author": "Gonzalo Lobos, Juan Pablo Ruiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lobosgonza/Cuarto-Rey/issues"
+  },
+  "homepage": "https://github.com/lobosgonza/Cuarto-Rey#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
