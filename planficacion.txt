@@ -1,0 +1,6 @@
+Cuarto Rey Piloto
+
+Tareas:
+- Casilla de Nombres
+- Distribucion de cartas
+- Lograr mensajes en al menos tres cartas
