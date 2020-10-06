@@ -1,6 +1,10 @@
+//jshint esversion:6
+
 const cartasUtilizadas = [];
 const pintasSet = ["Pica", "Trebol", "Corazon", "Diamante"]
 const reyes = []
+
+
 
 
 function randomCard(){
@@ -12,6 +16,10 @@ function randomCard(){
 
     document.getElementById('number').innerHTML ="Numero: " + randomNumber;
     document.getElementById('pinta').innerHTML = "Pinta: " + pintasSet[randomPinta];
+    
+    
+    // cantidad de Mazos (1 o 2). Esto multiplica la cantidad de cartas que puedan aparecer
+    const cantMazos = document.getElementById('qMazos').innerText;
 
 
 
@@ -19,7 +27,7 @@ function randomCard(){
 
   
 
-   
+
   
 
 
@@ -36,7 +44,7 @@ console.log(cartaActiva);
 
 
 // Condicional de Finalizacion de Juego
-if (cartasUtilizadas.length >= 52 || reyes.length > 4 ){
+if (cartasUtilizadas.length >= 52 * cantMazos || reyes.length >= 4) {
 
 
 }else{
@@ -46,7 +54,7 @@ if (cartasUtilizadas.length >= 52 || reyes.length > 4 ){
 
 // La carta va al array
 function pushCard(){
-if (longitudCartaActiva >= 1){ 
+if (longitudCartaActiva >= 1 * cantMazos){ 
    randomCard()
 } else {
     cartasUtilizadas.push(cartaActiva)
