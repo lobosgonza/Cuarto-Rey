@@ -12,22 +12,22 @@
 <body>
     
 
-
+    <form action="/" method="post">
     <div>
         <p>Cuantos Jugadores son?</p>
-    <button id="remove" onClick="reduceButton()">-</button>
-    <input type="number" min="0" max="10" name="playerBox"
-    id="numPlayers" value="0" disabled="disabled"> 
-    <button id="add" onClick="incrementButton()">+</button>
+        <button type="button" id="remove" onClick="reduceButton()">-</button>
+        <input type="number" min="0" max="10" name="playerBox"
+        id="numPlayers" value="0" readonly> 
+        <button type="button" id="add" onClick="incrementButton()">+</button>
+        
+        <p>Agrega sus nombres</p>
+        <div id="namePlayers">
+            
+        </div>
+    </div>
     
-     <p>Agrega sus nombres</p>
-    <div id="namePlayers">
+    
   
-    </div>
-    </div>
-    
-    <form action="/" method="post">
-
 <div>
     <p>Numero de Mazos</p>
 <label for="mazos">1</label>

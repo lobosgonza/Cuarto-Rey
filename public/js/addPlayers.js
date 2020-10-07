@@ -22,6 +22,7 @@ function incrementButton(){ // incrementButton(): incrementa en contador +1 y a√
 if (players.length <= 9) {
     players.push("player " + (players.length + 1));
     newInput.setAttribute("id", players.length);
+    newInput.setAttribute("name", "player" + players.length);
     nombrePlayers.appendChild(newInput);
 }
     console.log(players)
