@@ -10,15 +10,16 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
-
+    <section class="section">
+<div class="columns">
+    <div class="column bg-white">
     <form action="/" method="post">
     <div>
         <p>Cuantos Jugadores son?</p>
-        <button type="button" id="remove" onClick="reduceButton()">-</button>
+        <button type="button" class="button" id="remove" onClick="reduceButton()">-</button>
         <input type="number" min="0" max="10" name="playerBox"
         id="numPlayers" value="0" readonly> 
-        <button type="button" id="add" onClick="incrementButton()">+</button>
+        <button type="button" class="button" id="add" onClick="incrementButton()">+</button>
         
         <p>Agrega sus nombres</p>
         <div id="namePlayers">
@@ -31,15 +32,21 @@
 <div>
     <p>Numero de Mazos</p>
 <label for="mazos">1</label>
-<input type="radio" name="mazos" value="1" >
+<input type="radio" name="mazos" value="1" checked required >
 <label for="mazos">2</label>
 <input type="radio" name="mazos" value="2" >
 
-<button type="submit">Jugar</button>
+<button type="submit" class="button is-large">Jugar</button>
 </div>
 </form>
 
 
+</div>
+</div>
+
+
+
+</section>
 </body>
 
 <script src="/js/addPlayers.js"></script>
