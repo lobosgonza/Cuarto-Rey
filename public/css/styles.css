@@ -1,42 +1,57 @@
-.dona-section{
+h1,
+h2,
+h3,
+a,
+p {
+    color: white;
+}
+ footer{
+    background-color: black;
+ }
+
+.dona-section {
     background-color: black;
 }
 
-/* img */
 .carta-section{
-    position: relative;
-    text-align: center;
-    color: white;
+    width: 50%;
 }
-.carta{
-height: 75vh;
+
+/* img */
+
+.carta-img {
+   max-height: 70vh;
+   max-width: 90%;
 }
 
 .carta-text {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
+
+top: 7%;
+padding: 3px 5%;
+border-radius: 16px;
 }
 
+
+
 /* spacing */
-.spacing-btn{
-    margin: 2% auto;
-  
+.spacing-btn {
+    margin: 1% auto;
+
 }
 
 .spacing-section {
-    padding: 5% auto;
+padding: 5% 0;
 
 }
+
+
 
 /* masthead */
-.masthead{
-    background-image:url('../img/intro-bg.jpg');
-   
+.masthead {
+    background-image: url('../img/intro-bg.jpg');
 }
 
-/* height */
-.height100vh{
-    height: 100vh;
+/* color */
+.bg-oscurecer{
+background-color: rgba(0, 0,0, 50%);
 }
-
