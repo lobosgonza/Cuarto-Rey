@@ -9,39 +9,53 @@ let juegoEmpezado = false
 function newCard() {
 
 if (juegoEmpezado === false){
+/////////////////////////
     //  Nueva imagen
+//////////////////////////
     const newImg = document.createElement("img");
     const img = document.getElementById("insertImg");
 
-    const att = document.createAttribute("class");
-    att.value = "carta-img";
+    const imgAtt = document.createAttribute("class");
+    imgAtt.value = "";
     const src = document.createAttribute("src");
     src.value = "./img/pinochin.jpeg";
 
 
     img.appendChild(newImg);
-    newImg.setAttributeNode(att);
+    newImg.setAttributeNode(imgAtt);
     newImg.setAttributeNode(src);
 
-
-    // Nuevos Texto
+/////////////////////////
+    // Nuevo Texto
+/////////////////////////
     const newText = document.createElement("h2");
     newText.innerText = "Pinochin de copas";
     const newSubText = document.createElement("p");
-    newSubText.innerText = "Todos toman";
+    newSubText.innerText = "Piscolits al seco perri3";
 
     const text = document.getElementById("insertText");
 
-    const prop = document.createAttribute("class");
-    prop.value = "carta-text bg-oscurecer";
+    const textAtt = document.createAttribute("class");
+    textAtt.value = "card-img-overlay";
 
     text.appendChild(newText);
     text.appendChild(newSubText);
-    text.setAttributeNode(prop);
+    text.setAttributeNode(textAtt);
 
     const buttonStart = document.getElementById("startBtn");
     buttonStart.innerText = "Recoge otra carta";
+/////////////////////////
+    // crear Div carta
+/////////////////////////    
+const cardDiv = document.getElementById("card");
+const cardAtt = document.createAttribute("class");
+cardAtt.value = "card";
+cardDiv.setAttributeNode(cardAtt);
 
+
+///////////////////////// 
+// Toggle juegoEmpezado
+///////////////////////// 
     juegoEmpezado = true;
 }
 
