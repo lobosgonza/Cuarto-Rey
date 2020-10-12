@@ -2,6 +2,9 @@
 
 const cartas = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 
+const randomCard = Math.floor(1 + Math.random()*2);
+
+
 
 let juegoEmpezado = false
 
@@ -18,8 +21,13 @@ if (juegoEmpezado === false){
     const imgAtt = document.createAttribute("class");
     imgAtt.value = "carta-img";
     const src = document.createAttribute("src");
+    
+    if(randomCard === 1){
     src.value = "./img/pinochin.jpeg";
-
+    }else if (randomCard === 2){
+         src.value = "./img/ecceHomo.jpg";
+    };
+    console.log(randomCard);
 
     img.appendChild(newImg);
     newImg.setAttributeNode(imgAtt);
