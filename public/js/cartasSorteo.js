@@ -13,8 +13,14 @@ const cards=[
   {source:"./img/pinochin.jpeg", title:"Pinochin de copas",
   instructions:"Piscolits al seco perri3"},
   {source:"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FZi3bKtkrdfs%2Fmaxresdefault.jpg&f=1&nofb=1",
-  title:"Wea",
-  instructions:"matate"}
+  title:"uwu",
+  instructions:"regala uno"},
+  {source:"https://www.infogate.cl/wp-content/uploads/2016/09/Nachito-Pop-Rejugados.jpg",
+  title:"Nachito Pop",
+  instructions:"El mas weon toma"},
+  {source:"https://www.eldesconcierto.cl/wp-content/uploads/2020/08/A_UNO_1204029_3f6de.jpg",
+  title:"El lanza",
+  instructions:"el mas ladron toma, si son todos unos fomes culiaos el mas cagao."}
 ]
 
 
