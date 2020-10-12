@@ -22,6 +22,7 @@ p {
 .carta-img {
    max-height: 70vh;
    max-width: 90%;
+   opacity: 1;
 }
 
 .carta-text {
@@ -29,6 +30,11 @@ p {
 top: 7%;
 padding: 3px 5%;
 border-radius: 16px;
+}
+
+.card {
+  background-color: black;
+  background-opacity: 0.1;
 }
 
 
