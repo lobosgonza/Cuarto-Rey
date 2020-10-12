@@ -31,21 +31,23 @@ if (juegoEmpezado === false){
 /////////////////////////
     //  Nueva imagen
 //////////////////////////
-    //const newImg = document.createElement("img");
-    //const img = document.getElementById("cardI");
-
-    //const imgAtt = document.createAttribute("class");
-    //imgAtt.value = "carta-img";
-    //const src = document.Attribute("src");
-    //src.value = carta.source
-    //document.images.namedItem("CardImg").src = carta.source;
+    /*
+    const newImg = document.createElement("img");
+    const img = document.getElementById("cardI");
+    const imgAtt = document.createAttribute("class");
+    imgAtt.value = "carta-img";
+    const src = document.Attribute("src");
+    src.value = carta.source
+    document.images.namedItem("CardImg").src = carta.source;
+    */
     document.images[1].src=carta.source
 
 
-    //img.appendChild(newImg);
-    //newImg.setAttributeNode(imgAtt);
-    //img.setAttributeNode(src);                       // crea imagen con sus clases correspondientes
-
+    /*
+    img.appendChild(newImg);
+    newImg.setAttributeNode(imgAtt);
+    img.setAttributeNode(src);                       // crea imagen con sus clases correspondientes
+    */
 /////////////////////////
     // Nuevo Texto
 /////////////////////////
