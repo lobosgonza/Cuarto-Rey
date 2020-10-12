@@ -20,9 +20,8 @@ p {
 /* img */
 
 .carta-img {
-   max-height: 70vh;
-   max-width: 90%;
-   opacity: 1;
+
+   width: 100%;
 }
 
 .carta-text {
@@ -30,11 +29,6 @@ p {
 top: 7%;
 padding: 3px 5%;
 border-radius: 16px;
-}
-
-.card {
-  background-color: black;
-  background-opacity: 0.1;
 }
 
 
@@ -60,4 +54,22 @@ padding: 5% 0;
 /* color */
 .bg-oscurecer{
 background-color: rgba(0, 0,0, 50%);
+}
+
+
+/* card section */
+.card{
+width: 50%;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+@media(max-width: 768px){
+   .card {
+width: 100%;
+       margin-left: auto;
+       margin-right: auto;
+
+   }
 }

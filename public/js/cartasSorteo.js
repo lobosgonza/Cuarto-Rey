@@ -35,14 +35,14 @@ if (juegoEmpezado === false){
     const img = document.getElementById("insertImg");
 
     const imgAtt = document.createAttribute("class");
-    imgAtt.value = "";
+    imgAtt.value = "carta-img";
     const src = document.createAttribute("src");
     src.value = carta.source
 
 
     img.appendChild(newImg);
     newImg.setAttributeNode(imgAtt);
-    newImg.setAttributeNode(src);
+    newImg.setAttributeNode(src);                       // crea imagen con sus clases correspondientes
 
 /////////////////////////
     // Nuevo Texto
@@ -59,7 +59,7 @@ if (juegoEmpezado === false){
 
     text.appendChild(newText);
     text.appendChild(newSubText);
-    text.setAttributeNode(textAtt);
+    text.setAttributeNode(textAtt);                     // crea el texto correpondiente con sus atributos
 
     const buttonStart = document.getElementById("startBtn");//[?] porque tiene que estr esto aca?
     buttonStart.innerText = "Recoge otra carta";
@@ -69,7 +69,7 @@ if (juegoEmpezado === false){
 const cardDiv = document.getElementById("card");
 const cardAtt = document.createAttribute("class");
 cardAtt.value = "card";
-cardDiv.setAttributeNode(cardAtt);
+cardDiv.setAttributeNode(cardAtt);                      //crea el div Card que contiene la imagen y el texto de la carta
 
 
 /////////////////////////
