@@ -21,11 +21,12 @@
 
 
     <!-- navegador -->
-    <nav class="navbar navbar-light navbar-expand-md navbar navbar-expand-lg" id="mainNav">
+    <nav class="navbar navbar-dark navbar-expand-md navbar navbar-expand-lg" id="mainNav">
         <div class="container"><a class="navbar-brand" href="#">Cuarto REY</a><button data-toggle="collapse"
                 class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" type="button"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu"><i
                     class="fa fa-bars"></i></button>
+
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item nav-link"><a class="nav-link active" href="#about">Sobre Nostros</a></li>
@@ -44,15 +45,30 @@
             <div class="row ">
                 <div class="col carta-section ">
                     <div class="justify-content-center spacing-section ">
-                        <div id="card w-100 d-block">
 
+                      <div class="card">
+                          <img id="CardImg" class="card-img w-100 d-block" src="./img/pinochin.jpeg">
+                          <div class="card-img-overlay">
+                              <h4 id="CardTitle">Apreta la weaita pa jugar</h4>
+                              <div></div>
+                              <p id="CardIns">Aweonao</p>
+                          </div>
+                      </div>
+
+        <!-- TODO: USAR SECTION-->
+                          <!---
+                          <div id="card w-100 d-block">
                           <div id="insertText" ></div>
                           <div id="insertImg"></div>
+                          </div>
+                          --->
 
-                        </div>
+
                     </div>
-                    <a onClick="newCard()" id="startBtn" class="btn btn-primary btn-lg spacing-btn" role="button">Iniciar!</a>
                 </div>
+            </div>
+            <div>
+                <a onClick="newCard()" id="startBtn" class="btn btn-primary btn-lg spacing-btn" role="button">Iniciar!</a>
             </div>
 
 

@@ -31,22 +31,25 @@ if (juegoEmpezado === false){
 /////////////////////////
     //  Nueva imagen
 //////////////////////////
-    const newImg = document.createElement("img");
-    const img = document.getElementById("insertImg");
+    //const newImg = document.createElement("img");
+    //const img = document.getElementById("cardI");
 
-    const imgAtt = document.createAttribute("class");
-    imgAtt.value = "carta-img";
-    const src = document.createAttribute("src");
-    src.value = carta.source
+    //const imgAtt = document.createAttribute("class");
+    //imgAtt.value = "carta-img";
+    //const src = document.Attribute("src");
+    //src.value = carta.source
+    //document.images.namedItem("CardImg").src = carta.source;
+    document.images[1].src=carta.source
 
 
-    img.appendChild(newImg);
-    newImg.setAttributeNode(imgAtt);
-    newImg.setAttributeNode(src);                       // crea imagen con sus clases correspondientes
+    //img.appendChild(newImg);
+    //newImg.setAttributeNode(imgAtt);
+    //img.setAttributeNode(src);                       // crea imagen con sus clases correspondientes
 
 /////////////////////////
     // Nuevo Texto
 /////////////////////////
+    /*
     const newText = document.createElement("h2");
     newText.innerText = carta.title
     const newSubText = document.createElement("p");
@@ -59,7 +62,15 @@ if (juegoEmpezado === false){
 
     text.appendChild(newText);
     text.appendChild(newSubText);
-    text.setAttributeNode(textAtt);                     // crea el texto correpondiente con sus atributos
+    text.setAttributeNode(textAtt);
+    // crea el texto correpondiente con sus atributos
+
+    */
+    document.getElementById("CardTitle").innerText=carta.title
+    document.getElementById("CardIns").innerText=carta.instructions
+
+
+
 
     const buttonStart = document.getElementById("startBtn");//[?] porque tiene que estr esto aca?
     buttonStart.innerText = "Recoge otra carta";
