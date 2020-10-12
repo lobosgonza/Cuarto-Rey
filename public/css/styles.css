@@ -13,6 +13,17 @@ p {
     background-color: black;
 }
 
+/* Header */
+
+.body{
+  background-color: black;
+}
+
+.navbar{
+  background-color: black;
+}
+
+/* Cartas */
 .carta-section{
     width: 50%;
 }
@@ -26,12 +37,10 @@ p {
 
 .carta-text {
 
-top: 7%;
-padding: 3px 5%;
-border-radius: 16px;
+  top: 7%;
+  padding: 3px 5%;
+  border-radius: 16px;
 }
-
-
 
 /* spacing */
 .spacing-btn {
@@ -40,10 +49,13 @@ border-radius: 16px;
 }
 
 .spacing-section {
-padding: 5% 0;
+  padding: 5% 0;
 
 }
 
+.btn{
+  background-color: black;
+}
 
 
 /* masthead */
@@ -53,15 +65,15 @@ padding: 5% 0;
 
 /* color */
 .bg-oscurecer{
-background-color: rgba(0, 0,0, 50%);
+  background-color: rgba(0, 0,0, 50%);
 }
 
 
 /* card section */
 .card{
-width: 50%;
-margin-left: auto;
-margin-right: auto;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 
