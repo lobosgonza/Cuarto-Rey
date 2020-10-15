@@ -17,74 +17,66 @@
 
 </head>
 
-<body id="page-top">
+<body class="bg-darkorange">
 
+    <div class="landing-page-size ">
 
-    <!-- navegador -->
-    <nav class="navbar navbar-dark navbar-expand-md navbar navbar-expand-lg" id="mainNav">
-        <div class="container"><a class="navbar-brand" href="#">Cuarto REY</a><button data-toggle="collapse"
-                class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" type="button"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu"><i
-                    class="fa fa-bars"></i></button>
+        <!-- Navegador -->
 
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item nav-link"><a class="nav-link active" href="#about">Sobre Nostros</a></li>
-                    <li class="nav-item nav-link"><a class="nav-link" href="https://www.youtube.com/watch?v=iG1o5xLqqcY">Descarga</a></li>
-                    <li class="nav-item nav-link"><a class="nav-link" href="#contact">Contacto</a></li>
-                </ul>
+        <nav class="navbar navbar-dark navbar-expand-md navbar-expand-lg bg-black" id="mainNav">
+            <div class="container"><a class="navbar-brand" href="#">Cuarto REY</a><button data-toggle="collapse"
+                    class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" type="button"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"
+                    value="Menu"><i class="fa fa-bars"></i></button>
+                <!-- 
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item nav-link"><a class="nav-link active" href="#">Sobre Nostros</a></li>
+                        <li class="nav-item nav-link"><a class="nav-link"
+                                href="https://www.youtube.com/watch?v=iG1o5xLqqcY">Descarga</a></li>
+                        <li class="nav-item nav-link"><a class="nav-link" href="#">Contacto</a></li>
+                    </ul>
+                </div> -->
             </div>
-        </div>
-    </nav>
-
-    <!-- Encabezado -->
-    <header class="masthead">
-
-        <!-- carta -->
-        <div class="container text-center ">
-            <div class="row ">
-                <div class="col carta-section ">
-                    <div class="justify-content-center spacing-section ">
-
-                      <div class="card">
-                          <img id="CardImg" class="card-img w-100 d-block" src="https://pbs.twimg.com/profile_images/666822122791174145/-4iMzhzf_400x400.jpg">
-                          <div class="card-img-overlay">
-                              <h4 id="CardTitle">Apreta la weaita pa jugar</h4>
-                              <div></div>
-                              <p id="CardIns">Aweonao</p>
-                          </div>
-                      </div>
-
-        <!-- TODO: USAR SECTION-->
-                          <!---
-                          <div id="card w-100 d-block">
-                          <div id="insertText" ></div>
-                          <div id="insertImg"></div>
-                          </div>
-                          --->
+        </nav>
 
 
+
+        <!-- Encabezado -->
+        <header >
+
+            <!-- Carta + Boton-->
+            <div class="container text-center  ">
+                <div class="row justify-content-center">
+                    <div class="card">
+                        <img id="CardImg" class="card-img d-block "
+                            src="https://pbs.twimg.com/profile_images/666822122791174145/-4iMzhzf_400x400.jpg">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title" id="CardTitle">Haz Click para jugar</h4>
+                            <p class="card-text" id="CardIns">Un manjarsh</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div>
+                        <a onClick="newCard()" id="startBtn" class="btn btn-primary btn-lg spacing-btn bg-btn btn-style"
+                            role="button">Iniciar!</a>
                     </div>
                 </div>
             </div>
-            <div>
-                <a onClick="newCard()" id="startBtn" class="btn btn-primary btn-lg spacing-btn" role="button">Iniciar!</a>
-            </div>
+        </header>
 
 
-        </div>
+    </div>
 
 
-    </header>
-
-
-
-    <footer>
-        <div class=" footer container text-center">
-            <!--<p>Copyright ©Juan Pablo Ruiz y Gonzalo Lobos  <br> 2020</p>-->
-            <p>Propiedad de los motorratones  <br> 2020</p>
+    <footer class="bg-black">
+        <div class="container text-center padding-size">
+            <p>Propiedad de los motorratones <br> 2020</p>
         </div>
     </footer>
+
+
 
 </body>
 

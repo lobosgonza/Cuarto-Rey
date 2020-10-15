@@ -1,3 +1,5 @@
+/* Global */
+
 h1,
 h2,
 h3,
@@ -5,83 +7,70 @@ a,
 p {
     color: white;
 }
- footer{
-    background-color: black;
- }
 
-.dona-section {
-    background-color: black;
+/* tamaños Div */
+
+.padding-size{
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
-/* Header */
+.landing-page-size {
+  height: 100vh;
+}
 
-.body{
+/* Card Section */
+
+.card {
+ height: 70vh;
+  margin: 5vh auto;
+}
+
+/* Background */
+
+.bg-black{
   background-color: black;
 }
 
-.navbar{
+.bg-darkorange {
+  background-color: darkorange;
+}
+
+.bg-btn {
   background-color: black;
 }
 
-/* Cartas */
-.carta-section{
-    width: 50%;
-}
 
 /* img */
 
-.carta-img {
+.card-img {
+width:auto;
+  height:100% ;
+}
+@media (max-width: 576px){
 
-   width: 100%;
+.card-img {
+object-fit: cover;
+
 }
 
-.carta-text {
-
+}
+  .carta-text {
   top: 7%;
   padding: 3px 5%;
   border-radius: 16px;
 }
+/* btn */
 
-/* spacing */
 .spacing-btn {
     margin: 1% auto;
 
 }
 
-.spacing-section {
-  padding: 5% 0;
-
-}
-
-.btn{
-  background-color: black;
+.btn-style{
+  border: none;
 }
 
 
-/* masthead */
-.masthead {
-    background-image: url('../img/intro-bg.jpg');
-}
-
-/* color */
-.bg-oscurecer{
-  background-color: rgba(0, 0,0, 50%);
-}
 
 
-/* card section */
-.card{
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-
-}
-
-@media(max-width: 768px){
-   .card {
-width: 100%;
-       margin-left: auto;
-       margin-right: auto;
-
-   }
-}
