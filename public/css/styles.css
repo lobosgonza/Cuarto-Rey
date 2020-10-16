@@ -3,10 +3,13 @@
 h1,
 h2,
 h3,
+h4,
 a,
 p {
     color: white;
 }
+
+
 
 /* tamaños Div */
 
@@ -17,13 +20,6 @@ p {
 
 .landing-page-size {
   height: 100vh;
-}
-
-/* Card Section */
-
-.card {
- height: 70vh;
-  margin: 5vh;
 }
 
 /* Background */
@@ -39,6 +35,18 @@ p {
 .bg-btn {
   background-color: black;
 }
+.bg-orange-transparente{
+background-color: rgba(100%, 64.61%, 0%, 50%)
+
+}
+
+/* Card Section */
+
+.card {
+ height: 70vh;
+  margin: 5vh;
+}
+
 
 
 /* img */
@@ -47,19 +55,16 @@ p {
 width:auto;
   height:100% ;
 }
+
 @media (max-width: 576px){
 
 .card-img {
 object-fit: cover;
-
 }
 
 }
-  .carta-text {
-  top: 7%;
-  padding: 3px 5%;
-  border-radius: 16px;
-}
+
+
 /* btn */
 
 .spacing-btn {
@@ -71,6 +76,11 @@ object-fit: cover;
   border: none;
 }
 
+/* style */
 
+.border-style {
+  border-radius: 15px;
+
+}
 
 

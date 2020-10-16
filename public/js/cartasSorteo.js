@@ -33,7 +33,7 @@ const cards = [{
   key: 2,
   source: "https://www.infogate.cl/wp-content/uploads/2016/09/Nachito-Pop-Rejugados.jpg",
   title: "Nachito Pop",
-  instructions: "Le mas bonite toma"
+  instructions: "El mas borracho o borracha toma"
 }, {
   id: 3,
   key: 3,
