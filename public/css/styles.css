@@ -6,7 +6,7 @@ h3,
 h4,
 a,
 p {
-    color: white;
+    color:#eeeeee;
 }
 
 
@@ -24,19 +24,32 @@ p {
 
 /* Background */
 
-.bg-black{
-  background-color: black;
+.bg-fondo, .bg-footer{
+  background-color: #000000;
 }
-
+.bg-grey{
+  background-color: #393e46;
+}
 .bg-darkorange {
   background-color: darkorange;
 }
-
-.bg-btn {
-  background-color: black;
+.bg-celeste, .bg-nav{
+  background-color: #af0404;
 }
-.bg-orange-transparente{
-background-color: rgba(100%, 64.61%, 0%, 50%)
+.bg-btn{
+  background-color: #ff0000;
+}
+.bg-btn:hover {
+  background-color: #af0404;
+}
+.bg-btn:click {
+  background-color: #ffffff;
+}
+
+
+.bg-box-transparente{
+/* background-color: rgba(0%, 67.8%, 71%, 50%) */
+background-color: rgba(68.6%, 1.6%, 1.6%, 50%);
 
 }
 
