@@ -24,8 +24,9 @@ p {
 
 /* Background */
 
-.bg-fondo, .bg-footer{
-  background-color: #000000;
+ .bg-footer,
+ .bg-nav{
+  background-color: #206a5d;
 }
 .bg-grey{
   background-color: #393e46;
@@ -33,14 +34,18 @@ p {
 .bg-darkorange {
   background-color: darkorange;
 }
-.bg-celeste, .bg-nav{
-  background-color: #af0404;
+.bg-fondo
+{
+  background-color: #000000;
+  /* background-color: #206a5d; */
 }
 .bg-btn{
-  background-color: #ff0000;
+  /* background-color: #ff0000; */
+  background-color: #81b214;
 }
 .bg-btn:hover {
-  background-color: #af0404;
+  /* background-color: #af0404; */
+   background-color: #206a5d;
 }
 .bg-btn:click {
   background-color: #ffffff;
@@ -49,7 +54,8 @@ p {
 
 .bg-box-transparente{
 /* background-color: rgba(0%, 67.8%, 71%, 50%) */
-background-color: rgba(68.6%, 1.6%, 1.6%, 50%);
+/* background-color: rgba(68.6%, 1.6%, 1.6%, 50%); */
+background-color: rgba( 39.45%, 54.43%, 6.12%, 50%);
 
 }
 

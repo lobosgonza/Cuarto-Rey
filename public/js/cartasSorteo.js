@@ -37,16 +37,23 @@ const cards = [{
 }, {
   id: 3,
   key: 3,
-  source: "https://www.eldesconcierto.cl/wp-content/uploads/2020/08/A_UNO_1204029_3f6de.jpg",
+  source: "./img/piñera.jpg",
   title: "El Pizzas",
   instructions: "El mas ladrón toma."
 }, {
   id: 4,
   key: 4,
   source: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FZi3bKtkrdfs%2Fmaxresdefault.jpg&f=1&nofb=1",
-  title: "El Barney del 7",
-  instructions: "juego del 7"
-}]
+  title: "El Barney",
+  instructions: "Toman los jugadores de ambos lados del jugador que sac+o la carta"
+},{
+  id: 5,
+  key: 5,
+  source: "./img/siete.jpg",
+  title: "El juego del 7",
+  instructions: "Cada jugador dice un numero en orden ascendente. Si en tu turno el numero es un multiplo de 7 o contiene el numero 7, deberás aplaudir y el orden de jugadores se invierte. Quien no cumple esta regla pierde. "
+}
+]
 
 
 console.log(cards);
