@@ -4,6 +4,10 @@
     background-color: #ffffff;
 } */
 
+.container {
+  padding: 2vh;
+}
+
 /* 
 .controlPanel {
     min-width: 100px;
@@ -13,3 +17,9 @@
     margin: 50px;
 
 } */
+
+.imgCard {
+  border-radius: 5px;
+  height: 300px;
+  width: auto;
+}
