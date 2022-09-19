@@ -268,9 +268,11 @@ const cardsList = [
 // DISCARDED TRAY ARRAY
 var discardCardArr = [];
 
+var remainingKingsArr = "👑👑👑👑";
+
 var gameOverSwitcher = 0;
 
-const btnReset = document.getElementById("resetBtn"); // get the reset button
+const getBtnReset = document.getElementById("resetBtn"); // get the reset button
 
 const getThrowCardBtn = document.getElementById("throwCardBtn"); // Get Throw Card btn
 
@@ -278,13 +280,11 @@ const getSortNumberBtn = document.getElementById("sortNumber");
 
 const getRemainingCards = document.getElementById("remainingCards");
 
-const getUsedCardlist = document.getElementById("usedCardsList");
-
 const getImageContainer = document.getElementById("imageContainer");
 
-// const getCardName = document.getElementById("card");
-
 const getKProbability = document.getElementById("probabilityK");
+
+const getKingsRemining = document.getElementById("kingsRemaining");
 
 var gameOverSwitcher = 0;
 
@@ -294,49 +294,39 @@ function showImg(card) {
   getImageContainer.src = card.src;
 }
 
-// Refresh the card discarded list in the DOM.
-
-function refreshCardDiscarded() {
-  getUsedCardlist
-    ? (getUsedCardlist.innerText = discardCardArr)
-    : console.log("remainingCards Id doesnt exists");
-}
-
 // RESET GAME FUNCTION
 function resetFunction() {
   discardCardArr = [];
-  refreshCardDiscarded();
-  getThrowCardBtn.innerHTML = "Throw Card";
-  getThrowCardBtn.classList.remove("disabled");
-  btnReset.innerHTML = "Reset";
   gameOverSwitcher = 0;
+  kingCounter = 0;
+  remainingKingsArr = "👑👑👑👑";
+  getThrowCardBtn.innerHTML = "Throw Card";
+  getBtnReset.innerHTML = "Reset";
   getSortNumberBtn.innerHTML = "Start";
   getRemainingCards.innerHTML = 52 - discardCardArr.length;
+  getKingsRemining.innerHTML = remainingKingsArr;
+  getThrowCardBtn.classList.remove("disabled"); // Clear the disabled prop in the Throw card button
   getImageContainer.src = "./cards-assets/back.png";
   probabilityK();
-
-  //   getCardName.innerHTML = "Start";
-
-  if (gameOverSwitcher === 1) {
-    numberGenerator();
-    gameOverSwitcher = 0;
-  }
 }
-btnReset.addEventListener("click", resetFunction);
+getBtnReset.addEventListener("click", resetFunction);
 
 // KING COUNTER
 
 var kingCounter = 0;
 
 function kingListener(currentCard) {
+  const kingsValues = [13, 27, 39, 52];
+
   if (
-    currentCard === 13 ||
-    currentCard === 27 ||
-    currentCard === 39 ||
-    currentCard === 52
+    kingsValues.includes(currentCard) // if currentCard is equal of 13, 27, 39 or 52
   ) {
     console.log("King!");
     kingCounter++;
+    remainingKingsArr = remainingKingsArr.substring(0, 8 - kingCounter * 2);
+    getKingsRemining.innerHTML = remainingKingsArr;
+    console.log(remainingKingsArr);
+
     console.log(`KingCounter = ${kingCounter}`);
   } else {
     console.log("No King");
@@ -349,12 +339,11 @@ function remainingCardsfunction() {
   getRemainingCards.innerHTML = remainingCards;
 }
 
-// Probability to obtaing K
+// PROBABILITY TO GET A KING
 
 function probabilityK() {
-  // TODO Improve The algoritm
-
-  const probability = (kingCounter + 1) / (51 - discardCardArr.length);
+  // TODO Improve The algoritm // DONE
+  const probability = (4 - kingCounter) / (52 - discardCardArr.length);
   const probabiliyRounded = (probability * 100).toFixed(2) + "%";
 
   getKProbability.innerHTML = probabiliyRounded;
@@ -363,16 +352,15 @@ function probabilityK() {
 // GAME OVER FUNCTION
 
 function gameOver() {
-  //   getRemainingCards.innerText = "0";
   getSortNumberBtn.innerText = "Game Over!"; // get the object which displays the current numbers.
 
   getThrowCardBtn.classList.add("disabled"); // deactivate the Trow Card Button
 
-  btnReset.innerHTML = "Play Again"; // Mutate reset button text
+  getBtnReset.innerHTML = "Play Again"; // Mutate reset button text
 
   gameOverSwitcher = 1; // switch the game Over Switcher
 
-  getKProbability.innerHTML = "Game over";
+  getKProbability.innerHTML = "Game Over";
 
   kingCounter = 0;
 }
@@ -382,14 +370,13 @@ function gameOver() {
 function showCardImg(currentNumber) {
   const nameCard = cardsList[currentNumber - 1].name;
 
-  //   getCardName.innerHTML = nameCard;
-
   showImg(cardsList[currentNumber - 1]);
 }
 
 // NUMBER GENERATOR FUNCTION
 
 function numberGenerator() {
+  console.log(`-- Turn ${discardCardArr.length + 1} --`);
   var currentNumber;
 
   // Returns a random integer from 0 to 52:
@@ -404,7 +391,7 @@ function numberGenerator() {
     getSortNumberBtn.innerText = cardsList[currentNumber - 1].name; // Show the current value of "currentNumber" in the screen
     discardCardArr.push(currentNumber); //   Push number into Cards used Array Maze
     console.log(discardCardArr); // Show the discad tray array
-    refreshCardDiscarded();
+
     showCardImg(currentNumber);
     kingListener(currentNumber);
     probabilityK();
