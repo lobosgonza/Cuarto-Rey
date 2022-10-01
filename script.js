@@ -312,7 +312,6 @@ function resetFunction() {
 getBtnReset.addEventListener("click", resetFunction);
 
 // KING COUNTER
-
 var kingCounter = 0;
 
 function kingListener(currentCard) {
@@ -328,6 +327,14 @@ function kingListener(currentCard) {
     console.log(remainingKingsArr);
 
     console.log(`KingCounter = ${kingCounter}`);
+
+    // If had 1 crown left
+
+    if (kingCounter === 3) {
+      document.querySelector(".bg-main").style.backgroundColor = "#EF9F9F";
+    } else {
+      document.querySelector(".bg-main").style.backgroundColor = "#ffffff";
+    }
   } else {
     console.log("No King");
   }
