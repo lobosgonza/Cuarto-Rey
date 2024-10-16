@@ -1,71 +1,60 @@
+:root {
+	--primary-color: #4caf50;
+	--secondary-color: #ef9f9f;
+	--text-color: #000000;
+	--bg-color: #ffffff;
+	--king-alert-color: #ef9f9f;
+	--card-back-color: #cccccc;
+}
+
 /* 
-FEFFDE
+cccccc
 DDFFBC
 91C788
-52734D
+ffffff
  */
 
-/* * {
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-} */
-
 * {
-  font-family: "Share Tech Mono", monospace;
+	font-family: 'Share Tech Mono', monospace;
+}
+
+button {
+	background-color: var(--primary-color);
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+button:hover {
+	background-color: #388e3c;
+}
+
+button.disabled {
+	background-color: #bdbdbd;
+	cursor: not-allowed;
 }
 
 .bg-header a {
-  color: #feffde;
-}
-.bg-header a:hover,
-.bg-header a:focus {
-  color: #ddffbc;
+	color: #333333;
 }
 .container {
-  padding: 3vh;
+	padding: 3vh;
 }
-
-/* 
-.controlPanel {
-    min-width: 100px;
-    border: 15px solid #a69c40;
-    border-radius: 45px;
-    padding: 50px;
-    margin: 50px;
-
-} */
 
 .imgCard {
-  border-radius: 5px;
-  height: 300px;
-  width: auto;
+	border-radius: 5px;
+	height: 45vh;
+	width: auto;
 }
 
-.bg-header {
-  background-color: #52734d;
-  color: #feffde;
+#kingsRemaining {
+	font-size: 2rem;
+	text-align: center;
+	margin: 10px 0;
 }
 
-.bg-main {
-  background-color: #ffffff;
-}
-/* BUTTON STYLING */
-
-.btn-success {
-  color: #52734d;
-  background-color: #ffffff;
-  border-radius: 0;
-  border-color: #52734d;
-  /* border-style: solid; */
-  border-width: 2px;
-}
-
-.btn-success:hover,
-.btn-success:focus,
-.btn-success:active {
-  color: #feffde;
-  background-color: #52734d;
-  border-color: #52734d;
-  box-shadow: inset 0px 0px #52734d;
-}
+/* --------------- */
